@@ -1,0 +1,144 @@
+<!-- https://www.w3schools.com/howto/howto_js_full_page_tabs.asp -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!--link the style sheet to the html. -->
+    <link rel = 'stylesheet' href ='style.css'>
+</head>
+<body>
+    <button class="tablink" onclick="openPage('Network', this, 'black')"id="defaultOpen">Network </button>
+    <button class="tablink" onclick="openPage('Pipeline', this, 'black')" >Pipline</button>
+    <button class="tablink" onclick="openPage('Analysis', this, 'black')">Analysis</button>
+   
+
+    <div id="Network" class="tabcontent">
+    <h3>Network</h3>
+    <p>search for investors or investments currently in the network...</p>
+        <div  class = "grid-container" > 
+            <!-- <label for="cars">Choose a car:</label> -->
+            <div class = "grid-item">
+                <select id="filter">
+                <option value="Name" selected >Name</option>
+                <option value="Type">Type</option>
+                <option value="desc">Description</option>
+                <option value="income">Income</option>
+                </select>
+            </div>
+            <div class=" grid-item">
+                <input type="text" id = "search" placeholder=" search..." >
+            </div>
+            <div class=" grid-item">
+                <button type = "submit">submit</button> <br>
+            </div>
+             <div class=" grid-item">
+                <label id = peopleLbl for ="people"> investors </label>
+                <input id = "people" type = "checkbox">
+                <label id = companyLbl for = "companies"> investments </label>
+                <input id ="companies" type = "checkbox">
+            </div>
+        
+        </div>
+
+        <div id ="Results" class = "searchResult"> 
+            <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                 nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                 reprehenLorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                  reprehen.Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                   nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                   reprehenLorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                    reprehen</p>
+
+        </div>
+      
+            
+    </div>
+
+    <div id="Pipeline" class="tabcontent">
+        <h3>Pipline</h3>
+        <p>yep...</p>
+        <div  class = "grid-container" > 
+            <!-- <label for="cars">Choose a car:</label> -->
+            <div class = "grid-item">
+                <select id="filter">
+                <option value="Name" selected >Name</option>
+                <option value="Type">Type</option>
+                <option value="desc">Description</option>
+                <option value="income">Income</option>
+                </select>
+            </div>
+            <div class=" grid-item">
+                <input type="text" id = "search" placeholder=" search..." ><br>
+            </div>
+            <div class=" grid-item"></div>
+             <div class=" grid-item">
+                <label id = peopleLbl for ="people"> investors </label>
+                <input id = "people" type = "checkbox">
+                <label id = companyLbl for = "companies"> investments </label>
+                <input id ="companies" type = "checkbox">
+            </div>
+        
+        </div>
+        <div id ="Results" class = "searchResult"> 
+            <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                 nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                 reprehenLorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                  reprehen.Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                   nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                   reprehenLorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                    reprehen</p>
+
+        </div>
+
+        
+
+    </div>
+
+    <div id="Analysis" class="tabcontent">
+        <h3>Analysis</h3>
+        <p>Key Perfomance Indicator</p>
+        <div id = "graph"> display kpi graph here</div>
+        <label id = "prompt KPI" class = "analysisPanel"> Search for company here:</label>
+        <input type = "text" id = "searchKPI" class = "analysisPanel" placeholder="search..."><br>
+        <label id = "prompt Y-axis" class = "analysisPanel"> select a y axis:</label>
+
+            <select id="filter">
+                <option value="HeadCount" selected >HeadCount</option>
+                <option value="epi">EPITDA</option>
+                <option value="profit">Gross Profit</option>
+                <option value="compValue">Total Company Value</option>
+            </select>
+
+
+    </div>
+
+    <script src="home.js"></script>
+
+
+    
+    
+</body>
+</html>

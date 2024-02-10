@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Connects me to the style -->
+    <link rel = 'stylesheet' href = 'style.css'> 
+</head>
+<body>
+
+    <!--Here are the butoons -->
+    <button class="tablink" onclick="openPage('Add',this,'black')">Add</button>
+    <button class="tablink" onclick="openPage('Storage', this, 'black')" id="defaultOpen">Storage</button>
+    <button class="tablink" onclick="openPage('Pipeline',this,'black')">Pipeline</button>
+    <button class="tablink" onclick="openPage('Analysis',this,'black')">Analysis</button>
+        
+
+    <div id="Storage" class="tabcontent">
+        <h3>Network</h3>
+        <p>search for investors or investments currently in the network...</p>
+            <div  class = "grid-container" > 
+                <!-- <label for="cars">Choose a car:</label> -->
+                <div class=" grid-item">
+                    <label id = peopleLbl for ="people"> Investors </label>
+                    <input id = "people" type = "checkbox">
+                    <label id = companyLbl for = "companies"> Investments </label>
+                    <input id ="companies" type = "checkbox">
+                </div><br>
+                
+                <div class = "grid-item">
+                    <select id="filter">
+                    <option value="Name" selected >Name</option>
+                    <option value="Type">Type</option>
+                    <option value="desc">Description</option>
+                    <option value="income">Income</option>
+                    </select>
+                </div><br>
+
+                <div class=" grid-item">
+                    <input type="text" id = "search" placeholder=" search..." >
+                </div><br>
+
+                <div class=" grid-item">
+                    <button type = "submit">Submit</button> <br>
+                </div>
+
+                <div id ="Results" class = "searchResult"> 
+                    <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                         nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                         reprehenLorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                          reprehen.Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                           nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                           reprehenLorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                            reprehen</p>
+        
+                </div>
+            </div>
+              
+    </div>
+
+    <div id="Pipeline" class="tabcontent">
+        <h3>Pipline</h3>
+        <p>yep...</p>
+        <div  class = "grid-container" > 
+            <!-- <label for="cars">Choose a car:</label> -->
+            <div class=" grid-item">
+                <label id = peopleLbl for ="people"> investors </label>
+                <input id = "people" type = "checkbox">
+                <label id = companyLbl for = "companies"> investments </label>
+                <input id ="companies" type = "checkbox">
+            </div><br>
+            
+            <div class = "grid-item">
+                <select id="filter">
+                <option value="Name" selected >Name</option>
+                <option value="Type">Type</option>
+                <option value="desc">Description</option>
+                <option value="income">Income</option>
+                </select>
+            </div><br>
+
+            <div class=" grid-item">
+                <input type="text" id = "search" placeholder=" search..." ><br>
+            </div><br>
+
+            <div class=" grid-item">
+                <button type = "submit">Submit</button> <br>
+            </div>
+        
+        </div>
+
+        <div id ="Results" class = "searchResult"> 
+            <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                 nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                 reprehenLorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                  reprehen.Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                   nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                   reprehenLorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                    reprehen</p>
+
+        </div>
+
+        
+    </div>
+
+    <div id="Analysis" class="tabcontent">
+        <h3>Analysis</h3>
+        <p>KPI stands for Key Perfomance Indicator</p>
+
+        <label id = "prompt KPI" class = "analysisPanel"> Search for company here:</label>
+
+        <input type = "text" id = "searchKPI" class = "analysisPanel" placeholder="search..."><br><br>
+
+        <label id = "prompt Y-axis" class = "analysisPanel"> Select a Y axis:</label>
+
+            <select id="filter">
+                <option value="HeadCount" selected >HeadCount</option>
+                <option value="epi">EPITDA</option>
+                <option value="profit">Gross Profit</option>
+                <option value="compValue">Total Company Value</option>
+            </select><br><br>
+        
+        <div id = "graph"> Display KPI graph here</div>
+
+    </div>
+
+    <div id="Add" class="tabcontent">
+        <div  class = "grid-container" > 
+        
+            <div class=" grid-item">
+                <h3>Investor</h3>
+                <p>If you would like to add a investor to the database please fill out all boxes with the corret data and press submit</p>
+
+                <form action="" id="form"></form>
+            
+                    <label for = "data">Current total Cash:</label>
+                    <input type="text" name="currentTotalCash" id="currentTotalCash"><br><br>
+            
+                    <label for = "data">Total Cash Invested:</label>
+                    <input type="text" name="totalCashInvested" id="totalCashInvested"><br><br>
+            
+                    <label for = "data">Name:</label>
+                    <input type="text" name="name" id="name"><br><br>
+            
+                    <label for = "data">Email:</label>
+                    <input type="text" name="email" id="email"><br><br>
+            
+                    <label for = "data">Thesis:</label>
+                    <input type="text" name="thesis" id="thesis"><br><br>
+            
+                    <label for = "data">Pipeline Location</label>
+                    <input type="text" name="pipelineLocation" id="pipelineLocation"><br><br>
+            
+                    <button type="submit" onclick="addDataInvestor(event)">Submit</button>
+            
+                </forms>
+            </div><br>
+    
+            <div class=" grid-item">
+                <p>___________________________________________________________________<p>
+                <h3>Investment</h3>
+                <p>If you would like to add a investment to the database please fill out all boxes with the corret data and press submit</p>
+
+                <form action="" id="form"></form>
+
+                    <label for = "data">Comapny Name:</label>
+                    <input type="text" name="companyName" id="companyName"><br><br>
+
+                    <label for = "data">Company Email:</label>
+                    <input type="text" name="companyEmail" id="companyEmail"><br><br>
+
+                    <label for = "data">Website:</label>
+                    <input type="text" name="website" id="website"><br><br>
+
+                    <label for = "data">Contact Name:</label>
+                    <input type="text" name="contactName" id="contactName"><br><br>
+
+                    <label for = "data">Biography:</label>
+                    <input type="text" name="biography" id="biography"><br><br>
+
+                    <label for = "data">Date Company is joining investment network:</label>
+                    <input type="text" name="dateCompanyJoined" id="dateCompanyJoined"><br><br>
+
+                    <label for = "data">Percent Company owened, enter as a decimal:</label>
+                    <input type="text" name="percentCompanyOwnened" id="percentCompanyOwnened"><br><br>
+
+                    <label for = "data">Pipeline Location, otherwise enter investor:</label>
+                    <input type="text" name="pipeLineLocation" id="pipeLineLocation"><br><br>
+
+                    <button type="submit" onclick="addDataInvestment(event)">Submit</button>
+
+                </forms>
+            </div><br>
+            
+            <div class=" grid-item">
+                <p>___________________________________________________________________<p></p>
+                <h3>Invest</h3>
+                <p>If you would like to add a investment relationship to the database please fill out all boxes with the corret data and press submit</p>
+
+                <form action="" id="form" ></form>
+            
+                    <label for = "fname">Invest Amount:</label>
+                    <input type="text" id="investAmount" name="investAmount"><br><br>
+            
+                    <label for = "fname">Investment Date:</label>
+                    <input type="text" id="investDate" name="investDate"><br><br>
+            
+                    <label for = "fname">Percent of Company:</label>
+                    <input type="text" id="percentCompany" name="percentCompany"><br><br>     <!---br is for break-->
+            
+                    <label for = "fname">Name of Investor, this will be tunred into a drop down:</label>
+                    <input type="text" id="investorUUID" name="investorUUID"><br><br>
+            
+                    <label for = "fname">Name of Investment, this will be tunred into a drop down:</label>
+                    <input type="text" id="investmentUUID" name="investmentUUID"><br><br>
+            
+                    <button type="submit" onclick="addDataInvest(event)">Submit</button>
+            
+                </forms>
+            </div><br>
+            
+            <div class=" grid-item">
+                <p>___________________________________________________________________<p></p>
+                <h3>KPI</h3>
+                <p>If you would like to add KPIs to the database please fill out all boxes with the corret data and press submit.</p>
+            
+                <form action="" id="form"></form>
+
+                    <label for="headcount">Headcount:</label>
+                    <input type="text" id="headcount" name="headcount"><br><br>
+
+                    <label for="epitda">EPITDA:</label>
+                    <input type="text" id="epitda" name="epitda"><br><br>
+
+                    <label for="grossProfit">Gross Profit:</label>
+                    <input type="text" id="grossProfit" name="grossProfit"><br><br>
+
+                    <label for="numLocations">Number of Locations:</label>
+                    <input type="text" id="numLocations" name="numLocations"><br><br>
+
+                    <label for="roi">Return on Investment (ROI):</label>
+                    <input type="text" id="roi" name="roi"><br><br>
+
+                    <label for="totalValueCompany">Total Value of the Company:</label>
+                    <input type="text" id="totalValueCompany" name="totalValueCompany"><br><br>
+
+                    <label for="quarter">Quarter, enter as a number:</label>
+                    <input type="text" id="quarter" name="quarter"><br><br>
+
+                    <label for="year">Year:</label>
+                    <input type="text" id="year" name="year"><br><br>
+
+                    <label for="investmentUUIDKPI">Name of Investment, I want to chnage this to a drop down menu but will work on that:</label>
+                    <input type="text" id="investmentUUIDKPI" name="investmentUUIDKPI"><br><br>
+
+                    <button type="submit" onclick="addDataKPI(event)">Submit</button>
+
+                </form> 
+            </div><br> 
+
+    </div>
+
+    <!---Connects me to javaScript file-->
+    <script src = "app.js"> </script>  
+
+</body>
+</html>

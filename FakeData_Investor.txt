@@ -1,0 +1,6 @@
+1350,10500,Fund,Fund@mail.com,This is the fund entity we run the investment network,Investor,
+150,1000,Grace,Grace@mail.com,Red Pandas,Investor,
+333, 0,Fremont,Fremont@mail.com,I am a broke college student you think I have money to invest?,Lead,
+23.67,100.45,Cory,Cory@mail.com,I want to invest in companies that have Machine learning,Warm Lead, 
+0,100,Blake,Blake@mail.com,ROBOTS,Invested,
+0,0,Antartica,AntarticaICE@mail.com,Ice,No Intrest,
